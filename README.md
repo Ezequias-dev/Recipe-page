@@ -41,5 +41,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Tshepo Mogorosi](https://tshepocalvin.github.io/portfolio/)
-- Frontend Mentor - [@tshepocalvin](https://www.frontendmentor.io/profile/tshepocalvin)
+- Website - []()
+- Frontend Mentor - [@Ezequias-dev](https://www.frontendmentor.io/profile/Ezequias-dev)
