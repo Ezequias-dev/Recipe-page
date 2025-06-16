@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@font-face {
+  font-family: "Young Serif Regular";
+  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Text Preset 3";
+  src: url(/assets/fonts/outfit/static/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Text Preset 4";
+  src: url(/assets/fonts/outfit/static/Outfit-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Text Preset 4 Bold";
+  src: url(/assets/fonts/outfit/static/Outfit-Bold.ttf);
+}
+
+:root {
+  /* STYLE GUIDE */
+
+  /* COLORS */
+
+  /* Rose */
+  --rose-800: #7A284E;
+  --rose-50: #FFF7FB;
+
+  /* Stone */
+  --stone-900: #312E2C;
+  --stone-600: #5F564D;
+  --stone-150: #E3DDD7;
+  --stone-100: #F3E5D7;
+
+  /* Brown */
+  --brown-800: #854632;
+
+  /* White */
+  --white: #FFF;
+
+  /* TYPOGRAPHY */
+
+  /* font size */
+  --text-preset-1-size: 4rem; 
+  --text-preset-2-size: 2.8rem;
+  --text-preset-3-size: 2rem;
+  --text-preset-4-size: 1.6rem;
+  --text-preset-4-bold-size: 1.6rem;
+
+  /* line height */
+  --text-preset-1-line-height: 100%; 
+  --text-preset-2-line-height: 100%; 
+  --text-preset-3-line-height: 100%; 
+  --text-preset-4-line-height: 150%; 
+  --text-preset-4-bold-line-height: 150%; 
+
+  /* SPACING */
+
+  --1600: 12.8rem;
+  --600: 4.8rem;
+  --500: 4rem;
+  --400: 3.2rem;
+  --300: 2.4rem;
+  --200: 1.6rem;
+  --150: 1.2rem;
+  --100: 0.8rem;
+}
+
+html {
+  font-size: 10px;
+  letter-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
