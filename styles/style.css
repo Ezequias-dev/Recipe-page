@@ -44,6 +44,7 @@
   /* TYPOGRAPHY */
 
   /* font size */
+  --text-preset-1-mobile-size: 3.6rem; 
   --text-preset-1-size: 4rem; 
   --text-preset-2-size: 2.8rem;
   --text-preset-3-size: 2rem;
@@ -78,4 +79,71 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--400);
+  padding: var(--500) var(--400);
+}
+
+.text-content .title {
+  display: grid;
+  gap: var(--400);
+}
+
+.title h1 {
+  font-family: "Young Serif Regular";
+  font-weight: normal;
+  font-size: var(--text-preset-1-mobile-size);
+  line-height: var(--text-preset-1-line-height);
+}
+
+.title p {
+  font-family: "Outfit", "Text Preset 4", sans-serif;
+  font-weight: 400;
+  font-size: var(--text-preset-4-size);
+  line-height: var(--text-preset-4-line-height);
+  color: var(--stone-600);
+}
+
+.preparation {
+  display: flex;
+  flex-direction: column;
+  gap: var(--200);
+  padding: var(--300);
+  border-radius: var(--150);
+  background-color: var(--rose-50);
+}
+
+.preparation h3 {
+  font-family: "Outfit", "Text Preset 3", sans-serif;
+  font-weight: 600;
+  font-size: var(--text-preset-3-size);
+  line-height: var(--text-preset-3-line-height);
+  color: var(--rose-800);
+}
+
+.preparation ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--100);
+}
+
+.preparation ul li {
+  font-family: "Outfit", "Text Preset 4", sans-serif;
+  color: var(--stone-600);
+  font-size: var(--text-preset-4-size);
+  font-weight: 400;
+
+}
+
+.preparation ul li::marker {
+  margin: 0 0 0 var(--100);
+}
+
+.preparation ul li span {
+  font-weight: 700;
+  padding: 0 0 0 var(--200);
 }
