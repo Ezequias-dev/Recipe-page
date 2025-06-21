@@ -44,19 +44,19 @@
   /* TYPOGRAPHY */
 
   /* font size */
-  --text-preset-1-mobile-size: 3.6rem; 
-  --text-preset-1-size: 4rem; 
+  --text-preset-1-mobile-size: 3.6rem;
+  --text-preset-1-size: 4rem;
   --text-preset-2-size: 2.8rem;
   --text-preset-3-size: 2rem;
   --text-preset-4-size: 1.6rem;
   --text-preset-4-bold-size: 1.6rem;
 
   /* line height */
-  --text-preset-1-line-height: 100%; 
-  --text-preset-2-line-height: 100%; 
-  --text-preset-3-line-height: 100%; 
-  --text-preset-4-line-height: 150%; 
-  --text-preset-4-bold-line-height: 150%; 
+  --text-preset-1-line-height: 100%;
+  --text-preset-2-line-height: 100%;
+  --text-preset-3-line-height: 100%;
+  --text-preset-4-line-height: 150%;
+  --text-preset-4-bold-line-height: 150%;
 
   /* SPACING */
 
@@ -79,6 +79,17 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 70em;
 }
 
 .text-content {
@@ -135,7 +146,8 @@ html {
   font-family: "Outfit", "Text Preset 4", sans-serif;
   color: var(--stone-600);
   font-size: var(--text-preset-4-size);
-  font-weight: 400;
+  line-height: var(--text-preset-4-line-height);
+  font-weight: normal;
   margin-left: var(--300);
   padding: 0 0 0 var(--200);
 }
@@ -172,9 +184,122 @@ html {
   padding: 0 0 0 var(--200);
   font-family: "Outfit", "Text Preset 4", sans-serif;
   font-size: var(--text-preset-4-size);
+  line-height: var(--text-preset-4-line-height);
   color: var(--stone-600);
 }
 
 .ingredients li::marker {
   color: var(--brown-800);
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--stone-150);
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--300);
+}
+
+.instructions h2 {
+  font-family: "Young Serif Regular";
+  font-size: var(--text-preset-2-size);
+  font-weight: normal;
+  color: var(--brown-800);
+}
+
+.instructions-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--100);
+}
+
+.instructions-container .instructions-box {
+  display: flex;
+  flex-direction: row;
+  gap: var(--200);
+  padding: 0 0 0 var(--100);
+  font-family: "Outfit", "Text Preset 4", sans-serif;
+  color: var(--stone-600);
+  line-height: var(--text-preset-4-line-height);
+  font-size: var(--text-preset-4-size);
+  font-weight: 400;
+}
+
+.instructions-box span {
+  font-weight: bold;
+}
+
+.instructions-box span:not(.names) {
+  color: var(--brown-800);
+}
+
+.nutrition {
+  display: flex;
+  flex-direction: column;
+  gap: var(--300);
+}
+
+.nutrition h2 {
+  font-family: "Young Serif Regular";
+  font-size: var(--text-preset-2-size);
+  font-weight: normal;
+  color: var(--brown-800);
+}
+
+.nutrition p {
+  font-family: "Outfit", "Text Preset 4", sans-serif;
+  color: var(--stone-600);
+  line-height: var(--text-preset-4-line-height);
+  font-size: var(--text-preset-4-size);
+  font-weight: normal;
+}
+
+.nutrition td {
+  font-family: "Outfit", "Text Preset 4", sans-serif;
+  color: var(--stone-600);
+  line-height: var(--text-preset-4-line-height);
+  font-size: var(--text-preset-4-size);
+  font-weight: normal;
+  padding-left: var(--400);
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition tr:last-child td {
+  border-bottom: none;
+}
+
+.nutrition .bold {
+  padding-left: 0;
+  padding-left: var(--200);
+  padding-right: var(--400);
+  font-weight: bold;
+  color: var(--brown-800);
+}
+
+@media screen and (min-width: 43.75em) {
+  body {
+    background-color: var(--stone-100);
+    padding: var(--1600) var(--600);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: var(--300);
+    padding: var(--500);
+    gap: var(--500);
+  }
+
+  .card .top-image {
+    border-radius: var(--150);
+  }
+
+  .text-content {
+    padding: 0;
+  }
 }
