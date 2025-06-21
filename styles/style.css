@@ -136,14 +136,45 @@ html {
   color: var(--stone-600);
   font-size: var(--text-preset-4-size);
   font-weight: 400;
-
-}
-
-.preparation ul li::marker {
-  margin: 0 0 0 var(--100);
+  margin-left: var(--300);
+  padding: 0 0 0 var(--200);
 }
 
 .preparation ul li span {
   font-weight: 700;
+}
+
+.preparation li::marker {
+  color: var(--rose-800);
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: var(--300);
+}
+
+.ingredients h2 {
+  font-family: "Young Serif Regular";
+  font-size: var(--text-preset-2-size);
+  font-weight: normal;
+  color: var(--brown-800);
+}
+
+.ingredients ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--100);
+}
+
+.ingredients ul li {
+  margin-left: var(--300);
   padding: 0 0 0 var(--200);
+  font-family: "Outfit", "Text Preset 4", sans-serif;
+  font-size: var(--text-preset-4-size);
+  color: var(--stone-600);
+}
+
+.ingredients li::marker {
+  color: var(--brown-800);
 }
