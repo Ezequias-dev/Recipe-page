@@ -2,22 +2,22 @@
 
 @font-face {
   font-family: "Young Serif Regular";
-  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
 }
 
 @font-face {
   font-family: "Text Preset 3";
-  src: url(/assets/fonts/outfit/static/Outfit-SemiBold.ttf);
+  src: url(assets/fonts/outfit/static/Outfit-SemiBold.ttf);
 }
 
 @font-face {
   font-family: "Text Preset 4";
-  src: url(/assets/fonts/outfit/static/Outfit-Regular.ttf);
+  src: url(assets/fonts/outfit/static/Outfit-Regular.ttf);
 }
 
 @font-face {
   font-family: "Text Preset 4 Bold";
-  src: url(/assets/fonts/outfit/static/Outfit-Bold.ttf);
+  src: url(assets/fonts/outfit/static/Outfit-Bold.ttf);
 }
 
 :root {
