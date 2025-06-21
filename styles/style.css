@@ -1,24 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
-@font-face {
-  font-family: "Young Serif Regular";
-  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Text Preset 3";
-  src: url(assets/fonts/outfit/static/Outfit-SemiBold.ttf);
-}
-
-@font-face {
-  font-family: "Text Preset 4";
-  src: url(assets/fonts/outfit/static/Outfit-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Text Preset 4 Bold";
-  src: url(assets/fonts/outfit/static/Outfit-Bold.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 :root {
   /* STYLE GUIDE */
@@ -105,14 +86,14 @@ body {
 }
 
 .title h1 {
-  font-family: "Young Serif Regular";
-  font-weight: normal;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
   font-size: var(--text-preset-1-mobile-size);
   line-height: var(--text-preset-1-line-height);
 }
 
 .title p {
-  font-family: "Outfit", "Text Preset 4", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 400;
   font-size: var(--text-preset-4-size);
   line-height: var(--text-preset-4-line-height);
@@ -129,7 +110,7 @@ body {
 }
 
 .preparation h3 {
-  font-family: "Outfit", "Text Preset 3", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: var(--text-preset-3-size);
   line-height: var(--text-preset-3-line-height);
@@ -143,7 +124,7 @@ body {
 }
 
 .preparation ul li {
-  font-family: "Outfit", "Text Preset 4", sans-serif;
+  font-family: "Outfit", sans-serif;
   color: var(--stone-600);
   font-size: var(--text-preset-4-size);
   line-height: var(--text-preset-4-line-height);
@@ -167,9 +148,9 @@ body {
 }
 
 .ingredients h2 {
-  font-family: "Young Serif Regular";
+  font-family: "Young Serif", serif;
+  font-weight: 400;
   font-size: var(--text-preset-2-size);
-  font-weight: normal;
   color: var(--brown-800);
 }
 
@@ -182,7 +163,8 @@ body {
 .ingredients ul li {
   margin-left: var(--300);
   padding: 0 0 0 var(--200);
-  font-family: "Outfit", "Text Preset 4", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
   font-size: var(--text-preset-4-size);
   line-height: var(--text-preset-4-line-height);
   color: var(--stone-600);
@@ -205,9 +187,9 @@ body {
 }
 
 .instructions h2 {
-  font-family: "Young Serif Regular";
+  font-family: "Young Serif", serif;
+  font-weight: 400;
   font-size: var(--text-preset-2-size);
-  font-weight: normal;
   color: var(--brown-800);
 }
 
@@ -222,7 +204,7 @@ body {
   flex-direction: row;
   gap: var(--200);
   padding: 0 0 0 var(--100);
-  font-family: "Outfit", "Text Preset 4", sans-serif;
+  font-family: "Outfit", sans-serif;
   color: var(--stone-600);
   line-height: var(--text-preset-4-line-height);
   font-size: var(--text-preset-4-size);
@@ -244,14 +226,14 @@ body {
 }
 
 .nutrition h2 {
-  font-family: "Young Serif Regular";
+  font-family: "Young Serif", serif;
+  font-weight: 400;
   font-size: var(--text-preset-2-size);
-  font-weight: normal;
   color: var(--brown-800);
 }
 
 .nutrition p {
-  font-family: "Outfit", "Text Preset 4", sans-serif;
+  font-family: "Outfit", sans-serif;
   color: var(--stone-600);
   line-height: var(--text-preset-4-line-height);
   font-size: var(--text-preset-4-size);
@@ -259,7 +241,7 @@ body {
 }
 
 .nutrition td {
-  font-family: "Outfit", "Text Preset 4", sans-serif;
+  font-family: "Outfit", sans-serif;
   color: var(--stone-600);
   line-height: var(--text-preset-4-line-height);
   font-size: var(--text-preset-4-size);
